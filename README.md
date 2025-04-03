@@ -1,4 +1,4 @@
-# Jainam576 Dialogflow Backend
+# Dialogflow Backend
 
 ## Overview
 This project is a **currency conversion chatbot** built using **Dialogflow**, **Flask**, and **Telegram**. The chatbot identifies user intents, extracts currency-related entities, and fetches real-time exchange rates to provide currency conversion. Additionally, it supports small talk and normal conversational responses.
