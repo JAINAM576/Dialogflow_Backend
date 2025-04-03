@@ -1,5 +1,9 @@
 from flask import Flask,request,jsonify
 import freecurrencyapi
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 client = freecurrencyapi.Client('fca_live_VXh7xjvALo6SQQZU3qxq4DwT2Xn68fTTDojgHXKm')
 app=Flask(__name__)
@@ -34,4 +38,4 @@ def entry1():
     return "Hello"
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=os.getenv("PORT"))
